@@ -15,8 +15,8 @@ func main() {
 		os.Exit(0)
 	}
 
-	filePath := os.Args[1]
-	function := os.Args[0]
+	filePath := os.Args[2]
+	function := os.Args[1]
 	switch function {
 	case "help":
 		utils.PrintHelp()
