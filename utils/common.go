@@ -10,7 +10,7 @@ import (
 
 func getPassword() []byte {
 	fmt.Print("Enter password: ")
-	password, _ := terminal.ReadPassword(-1)
+	password, _ := terminal.ReadPassword(0)
 	fmt.Print("\nConfirm password: ")
 	password1, _ := terminal.ReadPassword(0)
 	if !validatePassword(password, password1) {
